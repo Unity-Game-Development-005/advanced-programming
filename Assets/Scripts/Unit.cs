@@ -1,8 +1,10 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
 
 
 // Base class for all Unit. It will handle movement order given through the UserControl script.
@@ -24,10 +26,13 @@ public abstract class Unit : MonoBehaviour,
         m_Agent.angularSpeed = 999;
     }
 
+
     private void Start()
     {
-
+        // set the colour of the unit
+        SetColor(MainManager.Instance.unitColour);
     }
+
 
     void SetColor(Color c)
     {
@@ -94,4 +99,6 @@ public abstract class Unit : MonoBehaviour,
     {
         
     }
-}
+
+
+} // end of class
