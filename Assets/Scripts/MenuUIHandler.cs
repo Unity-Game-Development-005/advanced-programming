@@ -27,7 +27,7 @@ public class MenuUIHandler : MonoBehaviour
 
 
     // reference to 'main' scene
-    private int sceneToLoad = 1;
+    private int mainScene = 1;
 
 
 
@@ -47,7 +47,7 @@ public class MenuUIHandler : MonoBehaviour
     // loads a new scene
     public void LoadScene()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene(mainScene);
     }
 
 
