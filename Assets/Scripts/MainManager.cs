@@ -11,7 +11,9 @@ public class MainManager : MonoBehaviour
     // *** CREATE A SINGLETON PATTERN OF MAIN MANAGER ***
 
     // create a static instance of main manager to make it persistent
-    public static MainManager Instance;
+    // allow the instance to be read from other scripts                       - get
+    // but do not allow other scripts to be able to change the instance value - private set
+    public static MainManager Instance { get; private set; }
 
     // reference to unit colour
     public Color unitColour;
