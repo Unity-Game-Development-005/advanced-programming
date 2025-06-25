@@ -16,8 +16,8 @@ public class ResourcePile : Building
     // private member variable
     private float m_ProductionSpeed = 0.5f;
 
-    public float ProductionSpeed = 0.5f;
-    /*{
+    public float ProductionSpeed
+    {
         // the 'getter' returns the current value of m_ProductionSpeed
         get
         {
@@ -43,7 +43,7 @@ public class ResourcePile : Building
                 m_ProductionSpeed = value;
             }
         }
-    }*/
+    }
 
     private float m_CurrentProduction = 0.0f;
 

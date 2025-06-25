@@ -13,7 +13,7 @@ public class ProductivityUnit : Unit
 
     protected override void BuildingInRange()
     {
-        if (m_CurrentPile = null)
+        if (m_CurrentPile == null)
         {
             ResourcePile pile = m_Target as ResourcePile;
 
