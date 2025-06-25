@@ -31,7 +31,7 @@ public class UserControl : MonoBehaviour
         // if we press the left mouse button
         if (Input.GetMouseButtonDown(0))
         {
-            HandleInputAction();
+            HandleInputSelection();
 
         }
 
@@ -46,7 +46,7 @@ public class UserControl : MonoBehaviour
     }
 
 
-    public void HandleInputSelevtion()
+    public void HandleInputSelection()
     {
         var ray = GameCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
